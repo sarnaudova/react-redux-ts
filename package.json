@@ -1,0 +1,142 @@
+{
+  "name": "dcs-ui",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/enzyme": "^3.1.6",
+    "@types/enzyme-adapter-react-16": "^1.0.1",
+    "@types/history": "^4.6.2",
+    "@types/jest": "^22.0.1",
+    "@types/material-ui": "0.18.5",
+    "@types/react": "16.0.31",
+    "@types/react-addons-linked-state-mixin": "^0.14.18",
+    "@types/react-dom": "16.0.3",
+    "@types/react-redux": "^5.0.14",
+    "@types/react-router": "^4.0.20",
+    "@types/react-router-dom": "^4.2.3",
+    "@types/react-router-redux": "^5.0.11",
+    "@types/react-tap-event-plugin": "^0.0.30",
+    "@types/react-test-renderer": "^16.0.0",
+    "@types/redux-logger": "^3.0.5",
+    "@types/redux-mock-store": "^0.0.13",
+    "@types/redux-thunk": "^2.1.0",
+    "config-bean-ebay": "^0.1.34",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "history": "^4.7.2",
+    "hostip-checker-ebay": "^4.0.0",
+    "material-ui": "0.18.5",
+    "react": "16.0.31",
+    "react-dom": "16.0.3",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
+    "react-tap-event-plugin": "^3.0.2",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "validate-internals-ebay": "^4.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "7.1.2",
+    "babel-preset-stage-1": "^6.24.1",
+    "case-sensitive-paths-webpack-plugin": "2.1.1",
+    "chalk": "1.1.3",
+    "css-loader": "0.28.4",
+    "dotenv": "4.0.0",
+    "extract-text-webpack-plugin": "3.0.0",
+    "file-loader": "0.11.2",
+    "fs-extra": "3.0.1",
+    "html-webpack-plugin": "2.29.0",
+    "jest": "20.0.4",
+    "object-assign": "4.1.1",
+    "postcss-flexbugs-fixes": "3.2.0",
+    "postcss-loader": "2.0.6",
+    "promise": "8.0.1",
+    "react-dev-utils": "^4.0.1",
+    "react-test-renderer": "^16.2.0",
+    "redux-mock-store": "^1.4.0",
+    "source-map-loader": "^0.2.1",
+    "style-loader": "0.18.2",
+    "sw-precache-webpack-plugin": "0.11.4",
+    "ts-jest": "^20.0.7",
+    "ts-loader": "^2.3.7",
+    "tslint": "^5.7.0",
+    "tslint-loader": "^3.5.3",
+    "tslint-react": "^3.2.0",
+    "typescript": "2.6.2",
+    "url-loader": "0.5.9",
+    "webpack": "3.5.1",
+    "webpack-dev-server": "2.7.1",
+    "webpack-manifest-plugin": "1.2.1",
+    "whatwg-fetch": "2.0.3"
+  },
+  "scripts": {
+    "devstart": "node scripts/start.js",
+    "start": "node index.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js --env=jsdom",
+    "postinstall": "node scripts/build.js",
+    "coverage": "node scripts/test.js --env=jsdom --coverage"
+  },
+  "jest": {
+    "mapCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}"
+    ],
+    "setupFiles": [
+      "<rootDir>/config/polyfills.js"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.ts?(x)",
+      "<rootDir>/src/**/?(*.)(spec|test).ts?(x)"
+    ],
+    "testEnvironment": "node",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^.+\\.tsx?$": "<rootDir>/config/jest/typescriptTransform.js",
+      "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$"
+    ],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web"
+    },
+    "moduleFileExtensions": [
+      "web.ts",
+      "ts",
+      "web.tsx",
+      "tsx",
+      "web.js",
+      "js",
+      "web.jsx",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "setupTestFrameworkScriptFile": "./src/setupTests.ts",
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "/Users/sarnaudova/react-dcs/dcs-ui/tsconfig.test.json"
+      }
+    }
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "gpaas": {
+    "consumer-id": "urn:ebay-marketplace-consumerid:0f24d522-57f6-4706-821b-9c6fa074e0c1",
+    "short-app-name": "dcsui",
+    "owner": "sarnaudova@ebay.com",
+    "team-dl": "DL-eBay-dstage@ebay.com",
+    "registration-top-level-dir": "dcsui"
+  }
+}

@@ -1,0 +1,21 @@
+[{
+        "path": "GET /keywords/:keywords",
+        "handler": "require:./src/pages/search-results",
+        "pageName": "KeywordSearch",
+        "security": "L0SESSION"
+    }, {
+        "path": "GET /keywords",
+        "handler": "require:./src/pages/search-results"
+    }, {
+        "path": "GET /unknown",
+        "handler": "require:./src/pages/unknown"
+    }, {
+        "path": "GET /uncaughthandler",
+        "handler": "require:./src/pages/uncaught-exception"
+    },
+
+    {
+        "path": "GET /",
+        "handler": "require:./src/pages/index"
+    }
+]
